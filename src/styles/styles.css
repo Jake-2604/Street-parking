@@ -1,0 +1,86 @@
+/* style.css */
+
+body, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background-color: #F4F5F7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+  }
+  
+  a {
+    color: #4A90E2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    background-color: #F5A623;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: darken(#F5A623, 10%);
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
+  
+  .card {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .modal {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Utility classes for common paddings and margins */
+  .p-1 { padding: 5px; }
+  .p-2 { padding: 10px; }
+  .p-3 { padding: 15px; }
+  .m-1 { margin: 5px; }
+  .m-2 { margin: 10px; }
+  .m-3 { margin: 15px; }
+  
+  /* Add more utility classes and component-specific styles as needed */
+  

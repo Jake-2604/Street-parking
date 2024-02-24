@@ -1,0 +1,149 @@
+/* src/styles/HomePage.css */
+.home-page {
+    text-align: center;
+  }
+  
+  .hero-section {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    padding: 50px 20px;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+  }
+  
+  .features-section, .map-preview-section, .testimonials-section {
+    padding: 40px 20px;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    margin: 20px;
+    flex-basis: 200px;
+  }
+  
+  .map-placeholder {
+    background-color: #eee;
+    height: 200px; /* Adjust as needed based on your map component */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .testimonial {
+    background-color: #f4f5f7;
+    border-left: 5px solid #F5A623;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  blockquote {
+    font-style: italic;
+  }
+  
+  .home-page .hero-section {
+    background-image: url('../images/background4.jpg');; /* Adjust the path as needed */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* Adjust text color as needed */
+    text-align: center;
+  }
+  
+  .home-page .content-section {
+    background-color: #FFFFFF; /* White background */
+    padding: 50px 20px; /* Adjust padding as needed */
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+  }
+  
+  /* Additional styling for smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* HomePage.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust the background color as needed */
+    padding: 1rem 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center; /* Center the links */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    cursor: pointer;
+    color: #333; /* Adjust the text color as needed */
+    text-decoration: none;
+  }
+
+
+  .left-side, .right-side {
+    flex: 1; /* Both sides take up equal width */
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .upper-half, .lower-half {
+    flex: 1; /* Both halves take up equal height */
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
+  /* Ensure rest of your styles are correctly defined */
+/* Homepage.css */
+.split-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh; /* Make split-section take the full viewport height */
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+  }
+  
+  .content-with-dropdowns, .map-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .map-box {
+    flex: 1; /* Adjust based on layout preference */
+    padding: 20px; /* Provides some spacing around the map */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Gives the map box a shadow for visual separation */
+    /* Adjust the height and width as needed, or use flex-grow */
+  }
+  
+  /* If MapComponent doesn't automatically fill the container, you might need to adjust */
+  .map-container {
+    height: 100%; /* Ensure the map fills the map-box */
+    width: 100%;
+  }
+  
+  /* Additional styles for text-about-functionality, dropdowns */
+  .text-about-functionality, .dropdowns {
+    /* Ensure these take up the appropriate amount of space */
+    flex: 1;
+  }
+  
+  /* Remember to adjust the navbar, hero section, and content section styles as needed */
+    
