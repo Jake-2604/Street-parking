@@ -4,6 +4,8 @@ import MapComponent from "../components/MapComponent";
 import "./Homepage.css";
 import { Link } from "react-scroll";
 import QRCodeComponent from "../components/QRCode";
+import { motion } from 'framer-motion';
+
 
 const HomePage = () => {
   const [placeId, setPlaceId] = useState("");
@@ -70,7 +72,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <nav className="navbar">
+      <nav className="navbar fadeIn">
         <Link
           activeClass="active"
           to="hero-section"
@@ -102,12 +104,22 @@ const HomePage = () => {
           Features
         </Link>
       </nav>
-      <section id="hero-section" className="hero-section">
+
+      <motion.section id="hero-section" className="hero-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}>
+              <section id="hero-section" className="hero-section">
         <h1>Welcome to Our App</h1>
         <p>Scroll down to learn more</p>
       </section>
+      </motion.section>
 
-      <section id="split-section" className="split-section">
+
+      <motion.section id="split-section" className="split-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1.5 }}>
         <div className="left-side">
           {/* Other content remains unchanged */}
           <h3>Select Location and Timeslot</h3>
@@ -165,7 +177,9 @@ const HomePage = () => {
           {data[0] && <MapComponent position={data[0]} />}
           <p>Select a subplace to see it on the map.</p>
         </div>
-      </section>
+
+      </motion.section>
+
     </div>
   );
 };
